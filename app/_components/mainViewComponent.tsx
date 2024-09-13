@@ -22,6 +22,7 @@ export type GitHubUser = {
 
 export default function GitHubUserSearch() {
   const GITHUB_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+
   const [location, setLocation] = useState<string | "">("");
   const [users, setUsers] = useState<GitHubUser[]>([]);
   const [loading, setLoading] = useState(false);
